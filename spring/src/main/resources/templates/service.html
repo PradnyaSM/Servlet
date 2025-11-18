@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Services</title>
+</head>
+<body>
+<h1 th:text="${name}"></h1>
+
+<table border="1">
+    <thead>
+    <tr><th>Services</th></tr>
+    </thead>
+    <tbody>
+    <tr th:each="s : ${services}">
+        <td th:text="${s}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

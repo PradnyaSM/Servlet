@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Branches</title>
+</head>
+<body>
+<h1 th:text="${name}"></h1>
+
+<table border="1">
+    <thead>
+    <tr><th>Branch Names</th></tr>
+    </thead>
+    <tbody>
+    <tr th:each="b : ${branches}">
+        <td th:text="${b}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
